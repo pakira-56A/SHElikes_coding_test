@@ -11,9 +11,24 @@ img {
   max-width: 100%;
 }
 
-#concept, #system, #plan, #faq, #access {
+#concept, #menu, #news, #faq, #access {
   padding: 40px 0 56px 0;
 }
+
+/* ヘッダー・ハンバーガーメニュー */
+#concept-link:hover  {
+  content: url(../images/02-CONCEPT_hover.png);
+}
+#menu-link:hover  {
+  content: url(../images/03-MENU_hover.png);
+}
+#news-link:hover  {
+  content: url(../images/04-NEWS_hover.png);
+}
+#access-link:hover  {
+  content: url(../images/05-ACCESS_hover.png);
+}
+
 
 .section-inner {
   width: 100%;
@@ -41,7 +56,7 @@ img {
   .sp-only {
     display: block;
   }
-  #concept, #system, #plan, #faq, #access {
+  #concept, #menu, #news, #faq, #access {
     padding: 40px 0 30px 0;
   }
 }
@@ -174,18 +189,6 @@ p.small {    /* 注釈 */
   margin-bottom: 16px;
 }
 
-.icon {
-  width: 16px;
-  margin-bottom: 10px;
-}
-
-.title-en .title {
-  font-family: 'Cabin', sans-serif;
-  font-size: 19px;
-  letter-spacing: 0.13em;
-  font-weight: bold;
-}
-
 /** -----------------------------------
     レイアウト
 -------------------------------------**/
@@ -268,17 +271,17 @@ ul.gnav-pc li {
   margin-right: 40px;
 }
 
-ul.gnav-pc li a {
+/* ul.gnav-pc li a {
   font-family: 'Cabin', sans-serif;
   font-size: 19px;
   letter-spacing: 0.13em;
   color: #333333;
   font-weight: bold;
-}
+} */
 
-ul.gnav-pc li a:hover {
+/* ul.gnav-pc li a:hover {
   color: #F08658;
-}
+} */
 
 #menu-button {
   display: none;
@@ -449,21 +452,21 @@ ul.gnav-pc li a:hover {
 }
 
 /** -----------------------------------
-    システム
+    メニュー
 -------------------------------------**/
-#system {
+#menu {
 }
 
-#system h2.large {
+#menu h2.large {
   text-align: center;
 }
 
-#system p.medium {
+#menu p.medium {
   text-align: center;
   margin-bottom: 40px;
 }
 
-#system h3.small {
+#menu h3.small {
   text-align: center;
   margin-bottom: 16px;
 }
@@ -481,10 +484,10 @@ ul.gnav-pc li a:hover {
 
 /** -------- スマホ -------- **/
 @media screen and (max-width: 768px) {
-  #system h2.large span {
+  #menu h2.large span {
     display: block;
   }
-  #system p.medium {
+  #menu p.medium {
     margin-bottom: 30px;
   }
   .card {
@@ -493,26 +496,26 @@ ul.gnav-pc li a:hover {
 }
 
 /** -----------------------------------
-    料金プラン
+    ニュース
 -------------------------------------**/
-#plan {
+#news {
 }
 
-#plan h2.large {
+#news h2.large {
   text-align: center;
 }
 
-#plan p.medium {
+#news p.medium {
   text-align: center;
   margin-bottom: 40px;
 }
 
 /** -------- スマホ -------- **/
 @media screen and (max-width: 768px) {
-  #plan p.medium {
+  #news p.medium {
     margin-bottom: 30px;
   }
-  #plan p.medium span {
+  #news p.medium span {
     display: block;
   }
 }
