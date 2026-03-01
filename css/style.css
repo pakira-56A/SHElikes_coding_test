@@ -382,12 +382,12 @@ ul.gnav-pc li a:hover {
 #mainvisual {
   width: 100vw;
   height: calc(100vh - 70px);
-  background-image: url("../images/01-MV_pc.png");
+  background-image: url("../images/01-MV_pc_w1920.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  margin-top: calc(70px - 6px);     /* pc版MV画像の上6pxは余計な要素なので、差し引いてます */
+  margin-top: 70px;
   margin-bottom: 30px;
 }
 
@@ -411,31 +411,26 @@ ul.gnav-pc li a:hover {
   font-weight: bold;
 }
 
-.badge {
-  width: 172px;
-  height: 172px;
-  position: absolute;
-  top: 80px;
-  right: 100px;
-}
 
 
 /** -------- スマホ -------- **/
 
-/* @media screen and (min-width: 460px) and (max-width: 767px) {
-  #mainvisual {
-    background-image: url("../images/10-MV_sp.png");
-    margin-top: 54px;
-    margin-bottom: 30px;
-  }
-} */
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   #mainvisual {
     width: 100vw;
-    height: 100vh;
-    background-image: url("../images/10-MV_sp.png");
+  height: calc(100vh - 60px);
+    background-image: url("../images/01-MV_sp_w375.png");
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  #mainvisual {
+    width: 100vw;
+  height: calc(100vh - 60px);
+    background-image: url("../images/01-MV_sp_w768.png");
     margin-top: 60px;
     margin-bottom: 30px;
   }
