@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "Yu Gothic", YuGothic, Helvetica, Arial,
+  font-family: "Zen Maru Gothic","Yu Gothic", YuGothic, Helvetica, Arial,
   "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
   Meiryo, メイリオ, sans-serif;
   color: #333333;
@@ -256,7 +256,11 @@ p.small {
 .header-logo {
   display: flex;
   align-items: center;
-  width: 170px;
+  width: 120px;
+}
+
+.header-logo:hover {
+  opacity: 0.7;
 }
 
 .header-logo a {
@@ -391,26 +395,6 @@ ul.gnav-pc li a:hover {
   margin-bottom: 30px;
 }
 
-.copy-wrap {
-  position: absolute;
-  left: 120px;
-  bottom: 120px;
-}
-.maincopy {
-  color: #FFFFFF;
-  font-size: 52px;
-  font-weight: bold;
-  line-height: 1.5;
-  letter-spacing: 0.01em;
-  margin-bottom: 40px;
-}
-
-.subcopy {
-  color: #FFFFFF;
-  font-size: 28px;
-  font-weight: bold;
-}
-
 
 
 /** -------- スマホ -------- **/
@@ -418,7 +402,7 @@ ul.gnav-pc li a:hover {
 @media screen and (max-width: 375px) {
   #mainvisual {
     width: 100vw;
-  height: calc(100vh - 60px);
+    height: calc(100vh - 60px);
     background-image: url("../images/01-MV_sp_w375.png");
     margin-top: 60px;
     margin-bottom: 30px;
@@ -694,7 +678,7 @@ ul.gnav-pc li a:hover {
     フッター
 -------------------------------------**/
 #footer {
-  background-color: #333333;
+  background-color: #6eca8c;
   text-align: center;
   padding: 40px 0;
   margin-top: 110px;
