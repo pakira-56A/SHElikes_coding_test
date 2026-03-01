@@ -1,9 +1,9 @@
 @charset "UTF-8";
 body {
-  font-family: "Yu Gothic", YuGothic, Helvetica, Arial,
+  font-family: "Zen Maru Gothic","Yu Gothic", YuGothic, Helvetica, Arial,
   "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
   Meiryo, メイリオ, sans-serif;
-  color: #333333;
+  color: #682200;
   background-color: #dbf3e3;
 }
 
@@ -50,35 +50,28 @@ img {
     テキスト
 -------------------------------------**/
 
-h2.large {
+h2.large {   /* 見出し*/
   font-weight: bold;
-  font-size: 32px;
-  line-height: 1.6;
+  font-size: 25px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
 
-h3.small {
+h3.small {   /* カードの見出し */
   font-weight: bold;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
 }
 
-p.large {
-  font-size: 17px;
+p.medium {   /* 本文 */
+  font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
-  font-weight: bold;
+  letter-spacing: 0.05em;
 }
 
-p.medium {
-  font-size: 15px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-p.small {
+p.small {    /* 注釈 */
   font-size: 13px;
   line-height: 1.75;
   letter-spacing: 0.03em;
@@ -86,7 +79,7 @@ p.small {
 
 /** -------- スマホ -------- **/
 @media screen and (max-width: 768px) {
-  h2.large {
+  h2.large {   /* 見出し*/
     font-weight: bold;
     font-size: 22px;
     line-height: 1.6;
@@ -94,27 +87,20 @@ p.small {
     margin-bottom: 20px;
   }
 
-  h3.small {
+  h3.small {   /* カードの見出し */
     font-weight: bold;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
   }
 
-  p.large {
-    font-size: 15px;
-    line-height: 1.75;
-    letter-spacing: 0.06em;
-    font-weight: bold;
-  }
-
-  p.medium {
+  p.medium {   /* 本文 */
     font-size: 14px;
     line-height: 1.75;
     letter-spacing: 0.06em;
   }
 
-  p.small {
+  p.small {    /* 注釈 */
     font-size: 13px;
     line-height: 1.75;
     letter-spacing: 0.03em;
@@ -256,7 +242,11 @@ p.small {
 .header-logo {
   display: flex;
   align-items: center;
-  width: 170px;
+  width: 120px;
+}
+
+.header-logo:hover {
+  opacity: 0.7;
 }
 
 .header-logo a {
@@ -391,26 +381,6 @@ ul.gnav-pc li a:hover {
   margin-bottom: 30px;
 }
 
-.copy-wrap {
-  position: absolute;
-  left: 120px;
-  bottom: 120px;
-}
-.maincopy {
-  color: #FFFFFF;
-  font-size: 52px;
-  font-weight: bold;
-  line-height: 1.5;
-  letter-spacing: 0.01em;
-  margin-bottom: 40px;
-}
-
-.subcopy {
-  color: #FFFFFF;
-  font-size: 28px;
-  font-weight: bold;
-}
-
 
 
 /** -------- スマホ -------- **/
@@ -418,7 +388,7 @@ ul.gnav-pc li a:hover {
 @media screen and (max-width: 375px) {
   #mainvisual {
     width: 100vw;
-  height: calc(100vh - 60px);
+    height: calc(100vh - 60px);
     background-image: url("../images/01-MV_sp_w375.png");
     margin-top: 60px;
     margin-bottom: 30px;
@@ -565,14 +535,6 @@ ul.gnav-pc li a:hover {
   text-align: center;
 }
 
-#cta p.large {
-  text-align: center;
-}
-
-#cta p.large span {
-  display: block;
-}
-
 #cta .button-large {
   margin: 0 auto;
   margin-top: 40px;
@@ -694,7 +656,7 @@ ul.gnav-pc li a:hover {
     フッター
 -------------------------------------**/
 #footer {
-  background-color: #333333;
+  background-color: #6eca8c;
   text-align: center;
   padding: 40px 0;
   margin-top: 110px;
@@ -702,6 +664,10 @@ ul.gnav-pc li a:hover {
 
 #footer a {
   color: #FFFFFF;
+}
+
+#footer a:hover {
+  color: #c94200;
 }
 
 .footer-link, .copyright {
