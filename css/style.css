@@ -521,46 +521,6 @@ ul.gnav-pc li {
 }
 
 
-/** -----------------------------------
-    CTA
--------------------------------------**/
-#cta {
-  background-image: url("../images/cta-bg-pc.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #FFFFFF;
-  padding: 90px 0;
-  margin: 70px 0;
-}
-
-#cta h2.large {
-  text-align: center;
-}
-
-#cta .button-large {
-  margin: 0 auto;
-  margin-top: 40px;
-}
-
-
-/** -------- スマホ -------- **/
-@media screen and (max-width: 768px) {
-  #cta {
-    background-image: url("../images/cta-bg-sp.jpg");
-    padding: 90px 0;
-    margin: 30px 0;
-  }
-
-  #cta h2.large span {
-    display: block;
-  }
-
-  #cta p.large span {
-    display: inline;
-  }
-}
-
 
 
 /** -----------------------------------
