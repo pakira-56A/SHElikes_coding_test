@@ -3,7 +3,7 @@ body {
   font-family: "Zen Maru Gothic","Yu Gothic", YuGothic, Helvetica, Arial,
   "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
   Meiryo, メイリオ, sans-serif;
-  color: #333333;
+  color: #682200;
   background-color: #dbf3e3;
 }
 
@@ -50,35 +50,28 @@ img {
     テキスト
 -------------------------------------**/
 
-h2.large {
+h2.large {   /* 見出し*/
   font-weight: bold;
-  font-size: 32px;
-  line-height: 1.6;
+  font-size: 25px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
 
-h3.small {
+h3.small {   /* カードの見出し */
   font-weight: bold;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
 }
 
-p.large {
-  font-size: 17px;
+p.medium {   /* 本文 */
+  font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
-  font-weight: bold;
+  letter-spacing: 0.05em;
 }
 
-p.medium {
-  font-size: 15px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-p.small {
+p.small {    /* 注釈 */
   font-size: 13px;
   line-height: 1.75;
   letter-spacing: 0.03em;
@@ -86,7 +79,7 @@ p.small {
 
 /** -------- スマホ -------- **/
 @media screen and (max-width: 768px) {
-  h2.large {
+  h2.large {   /* 見出し*/
     font-weight: bold;
     font-size: 22px;
     line-height: 1.6;
@@ -94,27 +87,20 @@ p.small {
     margin-bottom: 20px;
   }
 
-  h3.small {
+  h3.small {   /* カードの見出し */
     font-weight: bold;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
   }
 
-  p.large {
-    font-size: 15px;
-    line-height: 1.75;
-    letter-spacing: 0.06em;
-    font-weight: bold;
-  }
-
-  p.medium {
+  p.medium {   /* 本文 */
     font-size: 14px;
     line-height: 1.75;
     letter-spacing: 0.06em;
   }
 
-  p.small {
+  p.small {    /* 注釈 */
     font-size: 13px;
     line-height: 1.75;
     letter-spacing: 0.03em;
@@ -549,14 +535,6 @@ ul.gnav-pc li a:hover {
   text-align: center;
 }
 
-#cta p.large {
-  text-align: center;
-}
-
-#cta p.large span {
-  display: block;
-}
-
 #cta .button-large {
   margin: 0 auto;
   margin-top: 40px;
@@ -686,6 +664,10 @@ ul.gnav-pc li a:hover {
 
 #footer a {
   color: #FFFFFF;
+}
+
+#footer a:hover {
+  color: #c94200;
 }
 
 .footer-link, .copyright {
