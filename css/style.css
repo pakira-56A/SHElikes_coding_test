@@ -25,6 +25,9 @@ img {
 #news-link:hover  {
   content: url(../images/04-NEWS_hover.png);
 }
+#faq-link:hover  {
+  content: url(../images/XXXXX_hover.png);
+}
 #access-link:hover  {
   content: url(../images/05-ACCESS_hover.png);
 }
@@ -520,7 +523,56 @@ ul.gnav-pc li {
   }
 }
 
+/** -----------------------------------
+    FAQ
+-------------------------------------**/
+#faq {
+}
 
+#faq h2.large {
+  text-align: center;
+}
+
+.faq {
+  border-radius: 8px;
+  margin-bottom: 24px;
+  background-color: #F5F5F6;
+}
+
+.faq-head, .faq-body {
+  padding: 24px 72px 24px 32px;
+}
+
+.faq-head {
+  border-radius: 8px;
+  position: relative;
+}
+
+.faq-head::after {
+  content: "";
+  background-image: url("../images/arrow.png");
+  background-size: contain;
+  width: 14px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 24px;
+  margin: auto;
+}
+
+.faq-body {
+  border-radius: 8px;
+  /* 追記箇所 */
+  display: none;
+}
+
+/** -------- スマホ -------- **/
+@media screen and (max-width: 768px) {
+  .faq-body {
+    padding: 24px;
+  }
+}
 
 
 /** -----------------------------------
