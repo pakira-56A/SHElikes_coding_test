@@ -12,7 +12,7 @@ img {
 }
 
 #concept, #menu, #news, #faq, #access {
-  padding: 40px 4px; /* デザインカンプで設けた左右パディングは12% */
+  padding: 40px 4px 40px 4px; /* デザインカンプで設けた左右パディングは12% */
 }
 
 /* ヘッダー・ハンバーガーメニュー */
