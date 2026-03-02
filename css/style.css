@@ -445,7 +445,6 @@ ul.gnav-pc li a img {
 #concept .title-en {
   margin-bottom: 40px;
 }
-
 .concept-flex-container {   /* 左右を横並びにする */
   display: flex;
   gap: 20px; /* 左右の隙間 */
@@ -464,13 +463,10 @@ ul.gnav-pc li a img {
   object-fit: cover; /* 枠いっぱいに画像を表示 */
 }
 
-
-.concept-right {  /* 右側の設定 */
-  width: 615px;   /* デザインカンプで定めた値 */
-  display: flex;
-  flex-direction: column;   /* 縦並び */
+.concept-right {    /* 右側の設定 */
+  flex: 1;
+  gap: 20px;
 }
-
 .concept-box {
   flex: 1;
   display: flex; /* 中身（テキストと画像）を横並びにする */
@@ -507,7 +503,20 @@ ul.gnav-pc li a img {
     flex-direction: column;   /* 縦並び */
   }
   .concept-left {
+    width: 80%;
+  }
+
+  .concept-flex-container .concept-right img{
     width: 70%;
+    height: 70%;
+  }
+  #concept-right {
+    margin: 0 12% 0 12%;
+    width: 80%;
+    gap: 20px;
+  }
+  .concept-box{
+    padding: 20px 10%;
   }
 }
 
@@ -526,23 +535,27 @@ ul.gnav-pc li a img {
 
   #concept-right {
     margin: 0 12% 0 12%;
+    width: 100%;
+    gap: 20px;
   }
-  /* 2. 右側の青いボックス内の「テキストと画像」の横並びを解除 */
+  /* 「テキストと画像」の横並びを解除 */
   .concept-box {
     flex-direction: column; /* これでテキストの下に画像が来る */
-    text-align: center;    /* テキストを中央寄せにする場合 */
-    gap: 20px;
-    padding: 5%;
+    text-align: center;
+    padding: 0px;
+    gap: 10px;;
   }
-
-  /* 3. テキストと画像の幅を調整 */
   .text-content, .image-content {
     width: 100%;
     flex: none; /* Flexの比率指定を解除 */
+    gap: 10px;
+  }
+  #concept h2.large {
+    text-align: left
   }
   #concept p.medium, p.large {
-    text-align: center;
-    margin: 0 10%;
+    font-size: 14px;
+    text-align: left;
   }
   .image-content {
     text-align: center; /* 画像を中央に配置 */
