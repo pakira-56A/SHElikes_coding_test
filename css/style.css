@@ -12,7 +12,7 @@ img {
 }
 
 #concept, #menu, #news, #faq, #access {
-  padding: 40px 0 56px 0;
+  padding: 40px 4px 40px 4px; /* デザインカンプで設けた左右パディングは12% */
 }
 
 /* ヘッダー・ハンバーガーメニュー */
@@ -40,7 +40,7 @@ img {
 
 .section-inner {
   width: 100%;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -65,7 +65,7 @@ img {
     display: block;
   }
   #concept, #menu, #news, #faq, #access {
-    padding: 40px 0 30px 0;
+    padding: 40px 4%;
   }
 }
 
@@ -189,7 +189,7 @@ p.small {    /* 注釈 */
 
 
 /** -----------------------------------
-    見出し
+    セクションのタイトル
 -------------------------------------**/
 
 .title-en {
@@ -200,6 +200,13 @@ p.small {    /* 注釈 */
 .title-en img {
   height: 30px;
   transform-origin: center;
+}
+@media screen and (max-width: 768px) {
+  .title-en img {
+    height: 24px;
+    transform-origin: center;
+    margin-bottom: 20px;
+  }
 }
 
 /** -----------------------------------
@@ -438,24 +445,121 @@ ul.gnav-pc li a img {
 #concept .title-en {
   margin-bottom: 40px;
 }
-#concept p.medium {
-  font-size: 18px;
+.concept-flex-container {   /* 左右を横並びにする */
+  display: flex;
+  gap: 20px; /* 左右の隙間 */
+  align-items: stretch;
+}
+.concept-flex-container .concept-right img{
+  width: 100%;
+  height: 100%;
 }
 
-#concept .col-2 .item .col-2 .item img {
-  height: 185px;
+.concept-left {     /* 左側の設定 */
+  flex: 1;
+}
+.concept-left img {
+  width: 90%;
+  object-fit: cover; /* 枠いっぱいに画像を表示 */
+}
+
+.concept-right {    /* 右側の設定 */
+  flex: 1;
+  gap: 20px;
+}
+.concept-box {
+  flex: 1;
+  display: flex; /* 中身（テキストと画像）を横並びにする */
+  padding: 20px;
+  padding-right: 0px;
+  align-items: center;
+}
+
+.text-content {
+  width: 380px;
+}
+#concept h2.large{
+  margin-bottom: 10px;
+}
+#concept p.medium {
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.00em;
+}
+
+
+.image-content {
+  flex: 1;
+  text-align: right;
+}
+.image-content img {
+  height: 100%;
+}
+
+
+@media screen and (max-width: 1200px) {  /*1200pxまで*/
+  .concept-flex-container {
+    align-items: center;
+    flex-direction: column;   /* 縦並び */
+  }
+  .concept-left {
+    width: 80%;
+  }
+
+  .concept-flex-container .concept-right img{
+    width: 70%;
+    height: 70%;
+  }
+  #concept-right {
+    margin: 0 12% 0 12%;
+    width: 80%;
+    gap: 20px;
+  }
+  .concept-box{
+    padding: 20px 10%;
+  }
 }
 
 /** -------- スマホ -------- **/
-@media screen and (max-width: 768px) {
-  #concept h2.large {
-    text-align: center;
-  }
-  #concept p.medium {
-    margin-bottom: 30px;
-  }
+@media screen and (max-width: 768px) {  /*768pxまで*/
   #concept .title-en {
     margin-bottom: 16px;
+  }
+  .concept-flex-container {
+    align-items: center;
+    flex-direction: column;   /* 縦並び */
+  }
+  .concept-left {
+    width: 100%;
+  }
+
+  #concept-right {
+    margin: 0 12% 0 12%;
+    width: 100%;
+    gap: 20px;
+  }
+  /* 「テキストと画像」の横並びを解除 */
+  .concept-box {
+    flex-direction: column; /* これでテキストの下に画像が来る */
+    text-align: center;
+    padding: 0px;
+    gap: 10px;;
+  }
+  .text-content, .image-content {
+    width: 100%;
+    flex: none; /* Flexの比率指定を解除 */
+    gap: 10px;
+  }
+  #concept h2.large {
+    text-align: left
+  }
+  #concept p.medium, p.large {
+    font-size: 14px;
+    text-align: left;
+  }
+  .image-content {
+    text-align: center; /* 画像を中央に配置 */
+    width: 50%;
   }
 }
 
