@@ -18,23 +18,23 @@ img {
 /* ヘッダー・ハンバーガーメニュー */
 .concept-link:hover  {
   content: url(../images/02-CONCEPT_hover.png);
-  height: 25px;
+  height: 20px;
 }
 .menu-link:hover  {
   content: url(../images/03-MENU_hover.png);
-  height: 25px;
+  height: 20px;
 }
 .news-link:hover  {
   content: url(../images/04-NEWS_hover.png);
-  height: 25px;
+  height: 20px;
 }
 .faq-link:hover  {
   content: url(../images/05-FAQ_hover.png);
-  height: 25px;
+  height: 20px;
 }
 .access-link:hover  {
   content: url(../images/06-ACCESS_hover.png);
-  height: 25px;
+  height: 20px;
 }
 
 
@@ -285,20 +285,8 @@ ul.gnav-pc li {
 }
 
 ul.gnav-pc li a img {
-  height: 25px;
+  height: 20px;
 }
-
-/* ul.gnav-pc li a {
-  font-family: 'Cabin', sans-serif;
-  font-size: 19px;
-  letter-spacing: 0.13em;
-  color: #333333;
-  font-weight: bold;
-} */
-
-/* ul.gnav-pc li a:hover {
-  color: #F08658;
-} */
 
 #menu-button {
   display: none;
@@ -377,7 +365,7 @@ ul.gnav-pc li a img {
   }
 
   ul.gnav-sp li a img {
-    height: 25px;
+    height: 20px;
   }
 }
 
