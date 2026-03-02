@@ -221,30 +221,30 @@
         <!-- 質問1 -->
         <div class="faq">
           <div class="faq-head">
-            <p class="medium">パーソナルジムって何をするんですか？</p>
+            <p class="medium">技術本以外の本も読めますか？</p>
           </div>
           <div class="faq-body">
-            <p class="medium">お客様1人につき1人のトレーナーがついてトレーニングの指導を行います。毎回トレーナーが現状と理想をみながら専用メニューを考えますので効率よく理想に近づくことが可能です。</p>
+            <p class="medium">はい、読めます！<br>ただ、技術本以外の本は現在20冊ほどしか置いてませんので、寄付いただける本がありましたらお声がけくださいませ</p>
           </div>
         </div>
 
         <!-- 質問2 -->
         <div class="faq">
           <div class="faq-head">
-            <p class="medium">ジムや運動の経験がほとんどないのですが、大丈夫でしょうか</p>
+            <p class="medium">エンジニアではない、IT未経験でも入店していいですが？</p>
           </div>
           <div class="faq-body">
-            <p class="medium">大丈夫です。マンツーマンでそれぞれのレベルに合わせて指導させていただきますので、ご安心ください。</p>
+            <p class="medium">もちろん大歓迎です！<br>エンジニアやITに興味がなくてもご利用可能です</p>
           </div>
         </div>
 
         <!-- 質問3 -->
         <div class="faq">
           <div class="faq-head">
-            <p class="medium">どのくらい痩せられますか？</p>
+            <p class="medium">勉強会の会場として利用可能ですか？</p>
           </div>
           <div class="faq-body">
-            <p class="medium">一般的なジムとは異なり、単純に体重を減らしていくことに重きを置いておりません。骨格や筋肉量によっても同じ見た目でも体重は大きく異なってきます。そのため、体重だけをみるのではなく筋肉量、脂肪量、体脂肪率などをみながら理想の体型を目指していきます。</p>
+            <p class="medium">はい、利用可能です。<br>事前に開催内容や参加人数などをご連絡いただけると、こちらでモニター・ケーブル類を用意できます。</p>
           </div>
         </div>
 
@@ -297,6 +297,7 @@
     <script>
       //よくある質問の開閉
       $(".faq-head").on("click", function() {
+        $(this).toggleClass("is-open");     // アイコンを切り替えるためにクラスをトグル
         $(this).next().slideToggle();
       });
 

@@ -525,9 +525,6 @@ ul.gnav-pc li a img {
 /** -----------------------------------
     FAQ
 -------------------------------------**/
-#faq {
-}
-
 #faq h2.large {
   text-align: center;
 }
@@ -535,7 +532,7 @@ ul.gnav-pc li a img {
 .faq {
   border-radius: 8px;
   margin-bottom: 24px;
-  background-color: #F5F5F6;
+  background-color: #FFFFFF;
 }
 
 .faq-head, .faq-body {
@@ -545,24 +542,30 @@ ul.gnav-pc li a img {
 .faq-head {
   border-radius: 8px;
   position: relative;
+  cursor: pointer
 }
 
 .faq-head::after {
   content: "";
-  background-image: url("../images/arrow.png");
+  background-image: url("../images/05-FAQ_プラスアイコン.png");
   background-size: contain;
-  width: 14px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 24px;
   margin: auto;
+  background-repeat: no-repeat;
+  transition: background-image 0.2s;
+}
+
+.faq-head.is-open::after {
+  background-image: url("../images/05-FAQ_マイナスアイコン.png");
 }
 
 .faq-body {
   border-radius: 8px;
-  /* 追記箇所 */
   display: none;
 }
 
