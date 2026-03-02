@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <!-- 文字コード -->
     <meta charset="UTF-8">
     <link rel="icon" href="images/favicon.ico" />
-    <!-- ブラウザで表示されるタイトル -->
     <title>技術本カフェ</title>
-    <!-- viewport -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS読み込み -->
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <!-- Webフォント読み込み -->
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,500;1,500&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 
     <meta property="og:url" content="https://pakira56acodingtest.vercel.app/" />
@@ -294,9 +290,7 @@
     </footer>
 
 
-    <!-- jQueryを読み込む-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- ScrollReveal読み込み（応用）-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
 
@@ -315,10 +309,10 @@
       $(".gnav-sp a").on("click", function() {
         $('.gnav-sp-wrap').fadeToggle(500);
       });
-      //スクロールするとふわっと表示（応用）
+      //スクロールするとふわっと表示
       ScrollReveal().reveal('.fadein', {
-        duration: 800,  // アニメーションの完了にかかる時間（0.8秒）
-        viewFactor: 0.5, // どれくらい見えたら実行するか（0〜1の間で指定）
+        duration: 800,
+        viewFactor: 0.3,
       });
     </script>
   </body>
