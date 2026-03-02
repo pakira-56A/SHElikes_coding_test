@@ -16,20 +16,25 @@ img {
 }
 
 /* ヘッダー・ハンバーガーメニュー */
-#concept-link:hover  {
+.concept-link:hover  {
   content: url(../images/02-CONCEPT_hover.png);
+  height: 25px;
 }
-#menu-link:hover  {
+.menu-link:hover  {
   content: url(../images/03-MENU_hover.png);
+  height: 25px;
 }
-#news-link:hover  {
+.news-link:hover  {
   content: url(../images/04-NEWS_hover.png);
+  height: 25px;
 }
-#faq-link:hover  {
-  content: url(../images/XXXXX_hover.png);
+.faq-link:hover  {
+  content: url(../images/05-FAQ_hover.png);
+  height: 25px;
 }
-#access-link:hover  {
-  content: url(../images/05-ACCESS_hover.png);
+.access-link:hover  {
+  content: url(../images/06-ACCESS_hover.png);
+  height: 25px;
 }
 
 
@@ -192,6 +197,11 @@ p.small {    /* 注釈 */
   margin-bottom: 16px;
 }
 
+.title-en img {
+  height: 30px;
+  transform-origin: center;
+}
+
 /** -----------------------------------
     レイアウト
 -------------------------------------**/
@@ -272,6 +282,10 @@ p.small {    /* 注釈 */
 ul.gnav-pc li {
   display: inline;
   margin-right: 40px;
+}
+
+ul.gnav-pc li a img {
+  height: 25px;
 }
 
 /* ul.gnav-pc li a {
@@ -362,12 +376,8 @@ ul.gnav-pc li {
     margin-bottom: 30px;
   }
 
-  ul.gnav-sp li a {
-    font-family: 'Cabin', sans-serif;
-    font-size: 20px;
-    letter-spacing: 0.1em;
-    color: #333333;
-    font-weight: bold;
+  ul.gnav-sp li a img {
+    height: 25px;
   }
 }
 
