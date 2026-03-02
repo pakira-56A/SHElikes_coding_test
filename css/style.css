@@ -530,7 +530,7 @@ ul.gnav-pc li a img {
 
 .faq-head::after {
   content: "";
-  background-image: url("../images/05-FAQ_プラスアイコン.png");
+  background-image: url("../images/05-FAQ_プラスアイコン.png");
   background-size: contain;
   width: 20px;
   height: 20px;
