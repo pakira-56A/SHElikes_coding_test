@@ -438,6 +438,13 @@ ul.gnav-pc li a img {
 #concept .title-en {
   margin-bottom: 40px;
 }
+#concept p.medium {
+  font-size: 18px;
+}
+
+#concept .col-2 .item .col-2 .item img {
+  height: 185px;
+}
 
 /** -------- スマホ -------- **/
 @media screen and (max-width: 768px) {
