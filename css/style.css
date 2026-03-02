@@ -455,31 +455,13 @@ ul.gnav-pc li a img {
 /** -----------------------------------
     メニュー
 -------------------------------------**/
-#menu {
-}
-
 #menu h2.large {
   text-align: center;
 }
 
-#menu p.medium {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-#menu h3.small {
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-.card {
-  height: 100%;
-  background-color: #F2F8FB;
-  border-radius: 10px;
-}
-
 .card .card-text {
-  padding: 24px 24px 32px 24px;
+  text-align: center;
+  padding: 24px;
 }
 
 
@@ -488,11 +470,12 @@ ul.gnav-pc li a img {
   #menu h2.large span {
     display: block;
   }
-  #menu p.medium {
-    margin-bottom: 30px;
-  }
+
   .card {
     margin-bottom: 24px;
+  }
+  .card .card-text {
+    font-size: 18px;
   }
 }
 
