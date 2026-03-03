@@ -215,22 +215,6 @@ p.small {    /* 注釈 */
   .col-2 .item {
     width: 100%;
   }
-
-  /* .col-3 {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-  }
-
-  .col-3 .item {
-    width: calc((100% - 48px) / 3);
-  }
-
-  .card img {
-    width: 100%;
-    height: auto;
-  } */
-  /* 画像が親要素を突き破らないように */
 }
 
 
