@@ -15,23 +15,6 @@ img {
   padding: 40px 4px 40px 4px; /* デザインカンプで設けた左右パディングは12% */
 }
 
-/* ヘッダー・ハンバーガーメニュー */
-.concept-link img:hover  {
-  content: url(../images/02-CONCEPT_hover.png);
-}
-.menu-link img:hover  {
-  content: url(../images/03-MENU_hover.png);
-}
-.news-link img:hover  {
-  content: url(../images/04-NEWS_hover.png);
-}
-.faq-link img:hover  {
-  content: url(../images/05-FAQ_hover.png);
-}
-.access-link img:hover  {
-  content: url(../images/06-ACCESS_hover.png);
-}
-
 
 .section-inner {
   width: 100%;
@@ -188,17 +171,16 @@ p.small {    /* 注釈 */
 -------------------------------------**/
 
 .title-en {
+  font-family: "ab-yurumin", sans-serif;
   text-align: center;
   margin-bottom: 16px;
+  font-size: 40px;
+  color: #c94200;
 }
 
-.title-en img {
-  height: 30px;
-  transform-origin: center;
-}
 @media screen and (max-width: 768px) {
-  .title-en img {
-    height: 24px;
+  .title-en {
+    font-size: 25px;
     transform-origin: center;
     margin-bottom: 20px;
   }
@@ -276,6 +258,20 @@ p.small {    /* 注釈 */
   justify-content: space-between;
   align-items: center;
 }
+
+/* Adobe fontsを適応 */
+.gnav-pc{
+  font-family: "ab-yurumin", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+}
+.gnav-pc a, .gnav-sp a {
+  color: #c94200;
+}
+.gnav-pc a:hover, .gnav-sp a:hover {
+  color: #ee8844;
+}
+
 
 .gnav-sp-wrap {
   display: none;

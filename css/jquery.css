@@ -54,8 +54,16 @@
     margin-bottom: 30px;
   }
 
-  ul.gnav-sp li a img {
-    height: 20px;
+  .gnav-sp{
+    font-family: "ab-yurumin", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+  }
+  .gnav-sp a, .gnav-sp a {
+    color: #c94200;
+  }
+  .gnav-sp a:hover, .gnav-sp a:hover {
+    color: #ee8844;
   }
 }
 
