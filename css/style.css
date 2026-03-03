@@ -560,24 +560,25 @@ ul.gnav-pc li a img {
 }
 
 .faq {
-  border-radius: 8px;
   margin-bottom: 24px;
-  background-color: #FFFFFF;
 }
 
 .faq-head, .faq-body {
   padding: 24px 72px 24px 32px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
 }
 
 .faq-head {
-  border-radius: 8px;
   position: relative;
   cursor: pointer
 }
 
 .faq-body {
-  border-radius: 8px;
+  width: 90%;
   display: none;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 /** -------- スマホ -------- **/
