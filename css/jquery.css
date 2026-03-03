@@ -1,0 +1,115 @@
+/* ヘッダー */
+/* ハンバーガーメニューを開いた際のスタイル */
+@media screen and (max-width: 768px) {
+
+  #menu-button {
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 22px 18px;
+  }
+
+  .menu-button-inner {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-button-inner span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #2D3D42;
+    position: absolute;
+  }
+
+  .menu-button-inner span:nth-child(1) {
+    top: 0;
+  }
+
+  .menu-button-inner span:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .menu-button-inner span:nth-child(3) {
+    bottom: 0;
+  }
+
+  /* スマホ用メニューのスタイル */
+  .gnav-sp-wrap {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: 100;
+    padding-top: 100px;
+  }
+
+  ul.gnav-sp li {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  ul.gnav-sp li a img {
+    height: 20px;
+  }
+}
+
+
+/* スライダー */
+.wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+.multiple-items img {
+  margin: 0 4px;
+}
+.slick-prev::before, .slick-next::before {
+  color: #c94200;
+  font-size: 40px;
+}
+/* 矢印サイズ40px + 余白10px = 50px外側へ */
+.slick-prev {
+  left: calc(-40px - 10px);
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper{
+    width: 90%;
+  }
+  .multiple-items img {
+    width: 80%;
+    height: 80%;
+  }
+  .slick-prev::before, .slick-next::before {
+    font-size: 34px;
+  }
+  .slick-prev {
+    left: calc(-34px - 4px);
+  }
+}
+
+
+/* FAQ：開閉 */
+.faq-head::after {
+  content: "";
+  background-image: url("../images/05-FAQ_プラスアイコン.png");
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 24px;
+  margin: auto;
+  background-repeat: no-repeat;
+  transition: background-image 0.2s;
+}
+
+.faq-head.is-open::after {
+  background-image: url("../images/05-FAQ_マイナスアイコン.png");
+}

@@ -9,6 +9,9 @@
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,500;1,500&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick.css" media="all">
+    <link rel="stylesheet" href="slick/slick-theme.css" media="all">
+    <link rel="stylesheet" href="css/jquery.css" media="all">
 
     <meta property="og:url" content="https://pakira56acodingtest.vercel.app/" />
     <meta property="og:type" content="website" />
@@ -190,15 +193,16 @@
         <div class="title-en">
           <img src="images/04-NEWS.png">
         </div>
-
         <h2 class="large">取りそろえている技術本</h2>
-        <p class="medium">
-          26/03/02 入荷
-        </p>
 
-        <!-- スライダーに変更 -->
-        <img class="pc-only" src="images/04-NEWS_book1.png">
-        <img class="sp-only" src="images/04-NEWS_book1.png">
+        <div class="wrapper">
+          <div class="multiple-items">
+            <img src="images/04-NEWS_book1.png" alt="">
+            <img src="images/04-NEWS_book2.png" alt="">
+            <img src="images/04-NEWS_book3.png" alt="">
+            <img src="images/04-NEWS_book4.png" alt="">
+          </div>
+        </div>
 
       </div>
     </div>
@@ -290,29 +294,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-
-
-    <script>
-      //よくある質問の開閉
-      $(".faq-head").on("click", function() {
-        $(this).toggleClass("is-open");     // アイコンを切り替えるためにクラスをトグル
-        $(this).next().slideToggle();
-      });
-
-      //#menu-buttonをクリックした時
-      $('#menu-button').on('click',function(){
-        $('.gnav-sp-wrap').fadeToggle(500);
-      });
-
-      //メニュー内のリンククリックしたとき
-      $(".gnav-sp a").on("click", function() {
-        $('.gnav-sp-wrap').fadeToggle(500);
-      });
-      //スクロールするとふわっと表示
-      ScrollReveal().reveal('.fadein', {
-        duration: 600,
-        viewFactor: 0.2,
-      });
-    </script>
+    <script src="slick/slick.min.js"></script>
+    <script src="javascript/jquery.js"></script>
   </body>
 </html>
