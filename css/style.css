@@ -111,57 +111,29 @@ p.small {    /* 注釈 */
 /** -----------------------------------
     ボタン
 -------------------------------------**/
-.button-small {
-  display: block;
-  width: 198px;
-  height: 50px;
-  background-color: #F08658;
-  color: #fff;
-  font-size: 13px;
-  letter-spacing: 0.03em;
-  font-weight: bold;
-  line-height: 50px;
-  text-align: center;
-  border-radius: 25px;
+.viewmore_button {
+    display: flex;
+  justify-content: center;
+  height: 100px;
 }
-
-.button-large {
-  display: block;
-  width: 296px;
-  height: 70px;
-  background-color: #F08658;
-  color: #fff;
-  font-size: 17px;
-  letter-spacing: 0.06em;
-  font-weight: bold;
-  line-height: 70px;
-  text-align: center;
-  border-radius: 35px;
+.viewmore_button a {
+  display: inline-block;
 }
-
-.button-border {
+.viewmore_button img {
+  /* 余計な隙間（デスクリプタ）を消す */
   display: block;
-  width: 192px;
-  height: 50px;
-  border: 1px solid #333333;
-  color: #333333;
-  font-size: 13px;
-  letter-spacing: 0.06em;
-  font-weight: bold;
-  line-height: 50px;
-  text-align: center;
-  border-radius: 25px;
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+}
+.viewmore_button img:hover{
+  content: url(../images/00-viewmore_button_hover.png);
 }
 
 /** -------- スマホ -------- **/
 @media screen and (max-width: 768px) {
-  .button-large {
-    display: block;
-    width: 198px;
-    height: 48px;
-    font-size: 14px;
-    line-height: 48px;
-    border-radius: 24px;
+  .viewmore_button img {
+    width: 140px;
   }
 }
 
@@ -340,7 +312,7 @@ ul.gnav-pc li a img {
 @media screen and (min-width: 376px) and (max-width: 768px) {
   #mainvisual {
     width: 100vw;
-  height: calc(100vh - 100px);
+    height: calc(100vh - 120px);
     background-image: url("../images/01-MV_sp_w768.png");
     margin-top: 60px;
     margin-bottom: 30px;
