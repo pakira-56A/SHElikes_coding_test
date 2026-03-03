@@ -129,12 +129,39 @@ p.small {    /* 注釈 */
 .viewmore_button img:hover{
   content: url(../images/00-viewmore_button_hover.png);
 }
-
-/** -------- スマホ -------- **/
 @media screen and (max-width: 768px) {
   .viewmore_button img {
     width: 140px;
     margin-top: 10px;
+  }
+}
+
+/* SNSボタン */
+.sns-button {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+}
+.sns-button img {
+  width: 60px;
+  height: auto;
+}
+.sns-button img:hover{
+  opacity: 50%;
+}
+@media screen and (max-width: 768px) {
+  .sns-button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .sns-button img {
+    width: 46px;
+    height: auto;
+    display: block;
   }
 }
 
@@ -199,6 +226,7 @@ p.small {    /* 注釈 */
   width: 100%;
   height: 70px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 0 80px;
   position: fixed;
@@ -239,7 +267,6 @@ p.small {    /* 注釈 */
   color: #ee8844;
 }
 
-
 .gnav-sp-wrap {
   display: none;
 }
@@ -249,14 +276,9 @@ ul.gnav-pc li {
   margin-right: 40px;
 }
 
-ul.gnav-pc li a img {
-  height: 20px;
-}
-
-#menu-button {
+#menu-button, .header-right {
   display: none;
 }
-
 
 /** -------- スマホ -------- **/
 /* ハンバーガーメニューを開いた際のスタイルは、jquery.cssに格納してます */
@@ -265,17 +287,23 @@ ul.gnav-pc li a img {
     height: 60px;
     padding: 0;
   }
-
   #header h1 {
     padding-left: 20px;
   }
-
   #header h1 a {
     display: flex;
   }
-
   .gnav-pc-wrap {
     display: none;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+
+  #menu-button:hover{
+    opacity: 50%;
   }
 }
 
