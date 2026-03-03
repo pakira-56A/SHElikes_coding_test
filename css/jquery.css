@@ -72,6 +72,7 @@
 .wrapper{
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 .multiple-items img {
   margin: 0 4px;
@@ -88,6 +89,7 @@
 @media screen and (max-width: 768px) {
   .wrapper{
     width: 90%;
+    margin-bottom: 10px;
   }
   .multiple-items img {
     width: 80%;
