@@ -500,7 +500,7 @@ ul.gnav-pc li a img {
   text-align: center;
 }
 
-.card .card-text {
+.item .menu-text {
   text-align: center;
   padding: 24px;
 }
@@ -515,7 +515,7 @@ ul.gnav-pc li a img {
   width: calc((100% - 48px) / 3);
 }
 
-.card img {
+.item img {
   width: 100%;
   height: auto;
 }
@@ -533,7 +533,7 @@ ul.gnav-pc li a img {
     width: calc((100% - 20px) / 3);
   }
   /* パディングを小さくして文字の折り返しを防ぐ */
-  .card .card-text {
+  .item .menu-text {
     padding: 10px 5px;
     font-size: 14px;
   }
