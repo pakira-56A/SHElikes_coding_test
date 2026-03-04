@@ -1,7 +1,5 @@
-/* ヘッダー */
 /* ハンバーガーメニューを開いた際のスタイル */
 @media screen and (max-width: 768px) {
-
   #menu-button {
     display: block;
     width: 60px;
@@ -23,17 +21,14 @@
     background-color: #c94200;
     position: absolute;
   }
-
   .menu-button-inner span:nth-child(1) {
     top: 0;
   }
-
   .menu-button-inner span:nth-child(2) {
     top: 0;
     bottom: 0;
     margin: auto;
   }
-
   .menu-button-inner span:nth-child(3) {
     bottom: 0;
   }
@@ -53,7 +48,6 @@
     text-align: center;
     margin-bottom: 30px;
   }
-
   .gnav-sp{
     font-family: "ab-yurumin", sans-serif;
     font-size: 25px;
@@ -81,11 +75,10 @@
   color: #c94200;
   font-size: 40px;
 }
-/* 矢印サイズ40px + 余白10px = 50px外側へ */
 .slick-prev {
+  /* 矢印サイズ40px + 余白10px = 50px外側へ */
   left: calc(-40px - 10px);
 }
-
 @media screen and (max-width: 768px) {
   .wrapper{
     width: 90%;
@@ -119,7 +112,6 @@
   background-repeat: no-repeat;
   transition: background-image 0.2s;
 }
-
 .faq-head.is-open::after {
   background-image: url("../images/05-FAQ_マイナスアイコン.png");
 }
