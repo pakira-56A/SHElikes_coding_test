@@ -25,7 +25,7 @@ $(".gnav-sp a").on("click", function() {
 
 //スクロールするとふわっと表示
 ScrollReveal().reveal('.fadein', {
-  duration: 600,
+  duration: 400,
   viewFactor: 0.2,
 });
 
