@@ -25,8 +25,8 @@ $(".gnav-sp a").on("click", function() {
 
 //スクロールするとふわっと表示
 ScrollReveal().reveal('.fadein', {
-  duration: 600,
-  viewFactor: 0.2,
+  duration: 400,
+  viewFactor: 0.1,
 });
 
 //ヘッダーメニューのフォントを、AB-yuruminに変更

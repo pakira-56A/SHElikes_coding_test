@@ -29,6 +29,12 @@ img {
 .sp-only {
   display: none;
 }
+@media screen and (max-width: 1200px) {
+  .section-inner {
+    padding: 0 24px;
+    max-width: 980px;
+  }
+}
 
 /** -------- スマホ -------- **/
 @media screen and (max-width: 768px) {
@@ -309,12 +315,36 @@ ul.gnav-pc li {
 
 
 /** -----------------------------------
+    左右の装飾
+-------------------------------------**/
+.side-deco {
+  position: fixed;
+  top: 0;
+  /* 画像の幅に合わせて調整 */
+  width: 40px;
+  height: 90vh;
+  z-index: -1;
+  margin-top: 65px;
+  /* 画像の端まで全て表示 */
+  background-size: contain;
+  background-repeat:repeat-y;
+  background-image: url('../images/00-装飾.png');
+}
+.side-deco-left { left: 0; }
+.side-deco-right { right: 0; }
+@media screen and (max-width: 768px) {
+  .side-deco {
+    width: 25px;
+  }
+}
+
+/** -----------------------------------
     メインビジュアル
 -------------------------------------**/
 #mainvisual {
   width: 100vw;
   height: calc(100vh - 100px);
-  background-image: url("../images/01-MV_pc_w1920.png");
+  background-image: url("../images/01-MV_pc_w1440.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -327,17 +357,16 @@ ul.gnav-pc li {
 @media screen and (max-width: 440px) {
   #mainvisual {
     width: 100vw;
-    height: calc(100vh - 100px);
+    height: 50vh;
     background-image: url("../images/01-MV_sp_w440.png");
     margin-top: 60px;
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 441px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #mainvisual {
     width: 100vw;
-    height: calc(100vh - 120px);
     background-image: url("../images/01-MV_sp_w768.png");
     margin-top: 60px;
     margin-bottom: 30px;
