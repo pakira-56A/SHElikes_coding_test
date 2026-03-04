@@ -323,22 +323,18 @@ ul.gnav-pc li {
   margin-bottom: 30px;
 }
 
-
-
 /** -------- スマホ -------- **/
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 440px) {
   #mainvisual {
     width: 100vw;
     height: calc(100vh - 100px);
-    background-image: url("../images/01-MV_sp_w375.png");
+    background-image: url("../images/01-MV_sp_w440.png");
     margin-top: 60px;
     margin-bottom: 30px;
   }
 }
 
-
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 441px) and (max-width: 768px) {
   #mainvisual {
     width: 100vw;
     height: calc(100vh - 120px);
