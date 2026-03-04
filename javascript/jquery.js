@@ -41,6 +41,7 @@ ScrollReveal().reveal('.fadein', {
 
 // クリック押下時にアラートを表示
 $('.alert-btn').on('click', function(e) {
-  alert('架空のカフェなので、アクセスできません。ごめんなさいね 🙇‍♀️');
+  // ブラウザのページ移動を止める
   e.preventDefault();
+  alert('架空のカフェなので、アクセスできません。ごめんなさいね 🙇‍♀️');
 });
