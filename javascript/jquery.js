@@ -43,5 +43,5 @@ ScrollReveal().reveal('.fadein', {
 $('.alert-btn').on('click', function(e) {
   // ブラウザのページ移動を止める
   e.preventDefault();
-  alert('架空のカフェなので、アクセスできません。ごめんなさいね 🙇‍♀️');
+  alert('架空のカフェなので、アクセスできません。\nごめんなさいね 🙇‍♀️');
 });
