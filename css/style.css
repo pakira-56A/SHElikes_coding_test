@@ -271,18 +271,26 @@ ul.gnav-pc li {
   position: relative;
   margin-top: 70px;
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 1440px) {
   #mainvisual {
     width: 100vw;
-    height: 50vh;
-    background-image: url("../images/01-MV_sp_w440.png");
-    margin-top: 60px;
+    height: calc(100vh - 100px);
+    background-image: url("../images/01-MV_pc_w1440.png");
+    margin-top: calc(70px - 15px);
   }
 }
 @media screen and (max-width: 768px) {
   #mainvisual {
     width: 100vw;
     background-image: url("../images/01-MV_sp_w768.png");
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 440px) {
+  #mainvisual {
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../images/01-MV_sp_w440.png");
     margin-top: 60px;
   }
 }
