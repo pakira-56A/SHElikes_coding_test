@@ -289,7 +289,7 @@ ul.gnav-pc li {
 @media screen and (max-width: 440px) {
   #mainvisual {
     width: 100vw;
-    height: 50vh;
+    height: 80vh;
     background-image: url("../images/01-MV_sp_w440.png");
     margin-top: 60px;
   }
