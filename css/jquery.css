@@ -115,3 +115,6 @@
 .faq-head.is-open::after {
   background-image: url("../images/05-FAQ_マイナスアイコン.png");
 }
+.faq-head:hover::after {
+  opacity: 0.5;
+}
