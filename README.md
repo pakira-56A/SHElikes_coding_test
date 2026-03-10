@@ -1,4 +1,6 @@
 # [技術本カフェ（架空サイト）](https://pakira56acoding.vercel.app/)
+<img src="images/10-OGP.png" alt="技術本カフェ">
+
 こちらはSHElikesの講座「Webサイト制作コーディング編」の実技試験で制作したサイトです。
 96点で合格できました
 - URL
