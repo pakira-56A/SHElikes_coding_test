@@ -11,7 +11,7 @@ img {
 }
 
 #concept, #menu, #news, #faq, #access {
-  padding: 40px 4px 40px 4px; /* デザインカンプで設けた左右パディングは12% */
+  padding: 64px 4px; /* デザインカンプで設けた左右パディングは12% */
 }
 .section-inner {
   width: 100%;
@@ -545,9 +545,9 @@ ul.gnav-pc li {
   left: 0;
   top: 50%;
   transform: translateY(-50%); /* 垂直中央寄せ */
-  width: 8px;
-  height: 8px;
-  background-color: #6eca8c;
+  width: 10px;
+  height: 10px;
+  background-color: #FFFFFF;
   border-radius: 50%;
 }
 .mt-address {
@@ -595,7 +595,7 @@ ul.gnav-pc li {
     フッター
 -------------------------------------**/
 #footer {
-  background-color: #6eca8c;
+  background-color: #FFFFFF;
   text-align: center;
   padding: 40px 0;
   margin-top: 110px;
@@ -612,14 +612,10 @@ ul.gnav-pc li {
   margin-right: 20px;
 }
 #footer a {
-  color: #FFFFFF;
-}
-#footer a:hover {
   color: #c94200;
 }
-
-.copyright {
-  color: #FFFFFF;
+#footer a:hover, .copyright {
+  color: #ee8844;
 }
 @media screen and (max-width: 768px) {
   #footer {
